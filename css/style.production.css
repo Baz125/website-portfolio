@@ -584,3 +584,6 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.project-link {
+  color: white;
+}

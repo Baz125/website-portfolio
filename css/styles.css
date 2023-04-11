@@ -401,3 +401,6 @@ th {
   display: flex;
   justify-content: space-between;
 }
+.project-link {
+  color: white;
+}
