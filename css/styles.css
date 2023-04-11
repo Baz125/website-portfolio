@@ -19,6 +19,11 @@ Secondary Color (Black): #000;
   --bhf-font-weight: 400;
   --bhf-font-size: 16px;  /* bhf-> body header footer */
 }
+.main {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  }
 
 body {
 background-color: var(--background-color);
@@ -135,8 +140,8 @@ align-items: center;
   flex-direction: column;
 }
 
-#about.picture{
-  max-width: 679;
+.berlin-illustration{
+  max-width: 400px;
 }
 
 * {
@@ -216,6 +221,9 @@ text-decoration: none;
   .projects {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+  .profile {
+    flex-direction: column;
   }
   .grid__item:last-child {
     grid-column: auto / auto;
@@ -324,12 +332,12 @@ th {
   from {
     transform: rotate(0deg);
     transform-origin: center;
-    transform-origin: fill-box;
+    transform-box: fill-box;
   }
   to {
     transform: rotate(360deg);
     transform-origin: center;
-    transform-origin: fill-box;
+    transform-box: fill-box;
   }
 }
 
@@ -341,12 +349,12 @@ th {
   from {
     transform: scale(1,1);
     transform-origin: center;
-    transform-origin: fill-box;
+    transform-box: fill-box;
   }
         to {
     transform: scale(3,3);
     transform-origin: center;
-    transform-origin: fill-box;
+    transform-box: fill-box;
   }
 }
 
