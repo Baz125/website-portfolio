@@ -36,7 +36,11 @@ body {
     /* Sets the font size to 16px */
     line-height: 1.6;
     /* Sets the line-height to 1.6 */
-    color: var(--primary-font-color)
+    color: var(--primary-font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   header {
@@ -218,6 +222,9 @@ text-decoration: none;
   padding-bottom: 80px;
 }
 @media all and (max-width: 500px) {
+  .main {
+    padding-left: 5px;
+  }
   .projects {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -239,6 +246,17 @@ text-decoration: none;
     font-size: 14px;
   }
 }
+
+@media all and (max-width: 560px) {
+  .navigation-list {
+    list-style-type: none;
+    display: flex;
+    direction: rtl;
+    flex-direction: column;
+}
+}
+
+
 @media all and (max-width: 500px) {
   .projects {
     grid-template-columns: 1fr;
@@ -362,12 +380,18 @@ th {
   animation: 30s cross-expand infinite alternate linear;
 }
 
-.about-text {
-  margin-top: 50px;
-  padding-bottom: 80px;
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about-text {
-  max-width: 700px;
-  margin: 0 auto;
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-form {
+  display: flex;
+  justify-content: space-between;
 }
